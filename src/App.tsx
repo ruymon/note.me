@@ -1,6 +1,18 @@
+import { GlobalStyles } from './styles/global'
+import { Routes, Route } from "react-router-dom"
+
+import { Login } from './pages/Login'
+import { Dashboard } from './pages/Dashboard'
+
 function App() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/app" element={<Dashboard />} />
+      </Routes>
+      <GlobalStyles />
+    </>
   );
 }
 
