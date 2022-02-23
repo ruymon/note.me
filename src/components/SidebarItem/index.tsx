@@ -9,6 +9,8 @@ interface SidebarItemProps {
 export function SidebarItem(props: SidebarItemProps) {
   return (
     <Wrapper active={props.active}>
+      {/*  TODO Active side  */}
+      
       {props.children}
     </Wrapper>
   )

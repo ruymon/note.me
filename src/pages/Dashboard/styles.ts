@@ -13,8 +13,26 @@ export const Container = styled.main`
   height: 100vh;
   overflow: hidden;
 
-  /* background: ${colors.gray[100]}; */
-  background: ${colors.primary.midnight};
+  background: ${colors.gray[100]};
+  margin: 0 auto;
 
   flex: 1;
+
+  padding: 0 4rem;
 `
+
+export const Greeting = styled.div`
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    color: ${colors.gray[900]};
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: ${colors.gray[600]};
+  }
+
+`;
