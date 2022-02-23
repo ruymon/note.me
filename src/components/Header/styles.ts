@@ -7,6 +7,14 @@ export const Container = styled.div`
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem 0 1rem 0;
+`;
+
+export const Searchbar = styled.div`
+  display: flex;
+  align-items: center;
   gap: 0.5rem;
 `;
 
