@@ -35,4 +35,16 @@ export const Greeting = styled.div`
     color: ${colors.gray[600]};
   }
 
+  margin-bottom: 3rem;
+
+`;
+
+export const PostContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  flex-wrap: wrap;
 `;
