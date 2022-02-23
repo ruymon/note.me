@@ -2,13 +2,14 @@ import { Sidebar } from './../../components/Sidebar';
 import { Container, Wrapper, Greeting, PostContainer } from './styles'
 
 import { Post } from './../../components/Post';
+import { Searchbar } from './../../components/Searchbar';
 
 export function Dashboard() {
   return (
     <Wrapper>
       <Sidebar />
       <Container>
-        {/* Search */}
+        <Searchbar />
 
         <Greeting>
           <h1>Hello, <strong>Ruy</strong>! 👋🏼</h1>

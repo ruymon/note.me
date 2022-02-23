@@ -29,7 +29,7 @@ export const ActiveBar = styled.div`
   height: 100%;
   background: ${colors.primary.midnight};
 
-  border-radius: 0 0.2rem 0.2rem 0;
+  border-radius: 0 1rem 1rem 0;
 
   position: absolute;
   top: 0;

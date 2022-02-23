@@ -7,6 +7,8 @@ export const Wrapper = styled.aside`
 
   background: ${colors.primary.white};
 
+  filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
+
   display: flex;
   align-items: center;
   justify-content: center;
