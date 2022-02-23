@@ -36,7 +36,12 @@ export const Button = styled.button<ButtonStyleProps>`
     box-shadow: 0 0 0 3px ${(props) => props.color[1]};
   }
 
-  &:active {
+  &:active:not(:disabled) {
     transform: scale(0.98);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 `

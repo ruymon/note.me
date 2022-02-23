@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { Container, Aside, Main, AnonymousInput } from './styles';
 
 import { FaGoogle } from 'react-icons/fa';
@@ -6,6 +8,10 @@ import { FiLogIn } from 'react-icons/fi';
 import { LoginButton } from './../../components/LoginButton';
 
 export function Login() {
+  const [codename, setCodename] = useState('');
+
+  const isDisabled = codename.trim() === '';
+
   return (
     <Container>
       <Aside>
@@ -27,9 +33,9 @@ export function Login() {
           or join anonymously  
         </div>
 
-        <AnonymousInput placeholder="Type your secret codename"/>
+        <AnonymousInput placeholder="Type your secret codename" onChange={(e) => setCodename(e.target.value)} value={codename} />
 
-        <LoginButton text="Join anonymously" color="green">
+        <LoginButton text="Join anonymously" color="green" disabled={isDisabled}>
           <FiLogIn />
         </LoginButton>
 

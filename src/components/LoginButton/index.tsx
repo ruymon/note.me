@@ -3,7 +3,7 @@ import { Button } from "./styles"
 
 import { colors } from './../../styles/colors'
 
-interface LoginButtonProps {
+interface LoginButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   text: string;
   color: 'green' | 'red';
@@ -17,7 +17,7 @@ const colorDictionary: any = {
 
 export function LoginButton(props: LoginButtonProps) {
   return (
-    <Button color={colorDictionary[props.color]}>
+    <Button {...props} color={colorDictionary[props.color]}>
       {props.children}
       <span>{props.text}</span>
     </Button>
