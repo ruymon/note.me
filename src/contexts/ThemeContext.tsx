@@ -1,4 +1,4 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, ReactNode } from "react";
 
 type ThemeType = "light" | "hybrid" | "dark";
 
@@ -9,7 +9,7 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType);
 
-export function ThemeProvider(Props) {
+export function ThemeProvider(Props: { children: ReactNode }) {
   const [theme, setTheme] = useState<ThemeType>("light");
 
   return (
