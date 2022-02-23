@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/app/:id" element={<Dashboard />} />
+        {/* TODO 404 Page */}
       </Routes>
       <GlobalStyles />
     </>
