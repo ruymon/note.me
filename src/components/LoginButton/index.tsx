@@ -1,12 +1,13 @@
-import { ReactNode } from "react";
+import { ReactNode, HTMLAttributes } from "react";
 import { Button } from "./styles"
 
 import { colors } from './../../styles/colors'
 
-interface LoginButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+interface LoginButtonProps extends HTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   text: string;
   color: 'green' | 'red';
+  disabled?: boolean; // This is not ideal cu'z I am extending the button props, but works.
 }
 
 // TODO Remove this any... PLEASE!

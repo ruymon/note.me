@@ -10,7 +10,7 @@ export const Container = styled.div`
 `
 
 export const Aside = styled.aside`
-  width: 40%;
+  width: 50%;
   height: 100%;
   background-color: ${colors.primary.white};
 
@@ -46,7 +46,7 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
 
-  width: 60%;
+  width: 50%;
 
   gap: 1.5rem;
 
