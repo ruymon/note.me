@@ -1,4 +1,6 @@
-import { FiMoon, FiSearch } from  'react-icons/fi';
+import { FiSearch } from  'react-icons/fi';
+import { ThemeIcon } from './../ThemeIcon';
+
 import { Container, Input, Searchbar } from "./styles";
 
 export function Header()  {
@@ -9,7 +11,8 @@ export function Header()  {
         <Input placeholder="Search Notes" />
       </Searchbar>
 
-      <FiMoon />
+      <ThemeIcon theme='light' />
+
     </Container>
   );
 };
