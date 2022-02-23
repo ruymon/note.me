@@ -11,19 +11,27 @@ export const Wrapper = styled.div<SidebarItemStyleProps>`
   
   transition: all .1s ease-in-out;
 
+  width: 5rem;
+  height: 3rem;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
 
   &:hover {
     opacity: 1;
   }
-`
-// export const ActiveBar = styled.div`
-//   width: 4px;
-//   height: 100%;
-//   background: ${colors.primary.midnight};
 
-//   border-radius: 0 0.5rem 0.5rem 0;
-// `;
+  position: relative;
+`
+export const ActiveBar = styled.div`
+  width: 4px;
+  height: 100%;
+  background: ${colors.primary.midnight};
+
+  border-radius: 0 0.2rem 0.2rem 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+`;

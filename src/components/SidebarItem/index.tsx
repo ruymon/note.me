@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Wrapper } from './styles';
+import { Wrapper, ActiveBar } from './styles';
 
 interface SidebarItemProps {
   children: ReactNode,
@@ -9,7 +9,8 @@ interface SidebarItemProps {
 export function SidebarItem(props: SidebarItemProps) {
   return (
     <Wrapper active={props.active}>
-      {/*  TODO Active side  */}
+      
+      { props.active ? <ActiveBar /> : null }
       
       {props.children}
     </Wrapper>

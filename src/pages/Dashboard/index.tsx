@@ -18,6 +18,10 @@ export function Dashboard() {
         <Post color='yellow' date='Feb, 23 2022'>
           <p>This is how a Note on Note.me looks like! Very simple, clean and asthetic! 😍</p>
         </Post>
+
+        <Post color='lilac' date='Feb, 23 2022'>
+          <p>This is how a Note on Note.me looks like! Very simple, clean and asthetic! 😍</p>
+        </Post>
         
       </Container>
     </Wrapper>

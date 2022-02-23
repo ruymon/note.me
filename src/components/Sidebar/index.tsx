@@ -1,5 +1,6 @@
 import { LogoIcon } from './../LogoIcon';
 import { Container, Wrapper } from './styles';
+// import * as S from './styles';
 
 import { FiHome, FiPlus, FiLogOut } from 'react-icons/fi';
 import { SidebarItem } from './../SidebarItem'
