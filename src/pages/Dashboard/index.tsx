@@ -1,8 +1,10 @@
 import { Sidebar } from './../../components/Sidebar';
-import { Container, Wrapper, Greeting, PostContainer } from './styles'
+import { Container, Wrapper, PostContainer } from './styles'
 
 import { Post } from './../../components/Post';
 import { Header } from '../../components/Header';
+import { Greeting } from '../../components/Greeting';
+
 
 export function Dashboard() {
   return (
@@ -11,10 +13,7 @@ export function Dashboard() {
       <Container>
         <Header />
 
-        <Greeting>
-          <h1>Hello, <strong>Ruy</strong>! 👋🏼</h1>
-          <h2>All your notes are here, in one place!</h2>
-        </Greeting>
+        <Greeting name={'Ruy'} />
 
         <PostContainer> 
           <Post color='yellow' date='Feb, 23 2022'>

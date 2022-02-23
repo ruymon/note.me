@@ -21,30 +21,12 @@ export const Container = styled.main`
   padding: 0 4rem;
 `
 
-export const Greeting = styled.div`
-  h1 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1;
-    color: ${colors.gray[900]};
-  }
-
-  h2 {
-    font-size: 1rem;
-    font-weight: 400;
-    color: ${colors.gray[600]};
-  }
-
-  margin-bottom: 3rem;
-
-`;
-
 export const PostContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 2rem;
 
   flex-wrap: wrap;
 `;
