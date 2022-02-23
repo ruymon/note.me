@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/app" element={<Dashboard />} />
+        <Route path="/app/:id" element={<Dashboard />} />
       </Routes>
       <GlobalStyles />
     </>
