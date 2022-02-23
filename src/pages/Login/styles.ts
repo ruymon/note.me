@@ -38,6 +38,10 @@ export const Aside = styled.aside`
       color: ${colors.gray[400]};
     }
   }
+
+  @media (max-width: 580px) {
+    display: none;
+  }
 `
 
 export const Main = styled.main`
@@ -73,6 +77,10 @@ export const Main = styled.main`
       height: 1px;
       background: ${colors.gray[300]} none repeat scroll 0% 0%;
     }
+  }
+
+  @media (max-width: 580px) {
+    width: 100%;
   }
 `
 
