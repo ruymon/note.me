@@ -9,7 +9,7 @@ export const Wrapper = styled.div<SidebarItemStyleProps>`
   color: ${colors.primary.midnight};
   opacity: ${(props) => props.active ? '1' : '0.5'};
   
-  transition: all .2s ease-in-out;
+  transition: all .1s ease-in-out;
 
   &:hover {
     opacity: 1;

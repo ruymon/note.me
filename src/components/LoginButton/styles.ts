@@ -27,7 +27,7 @@ export const Button = styled.button<ButtonStyleProps>`
     font-weight: 500;
   }
 
-  &:hover {
+  &:hover:not(:disabled) {
     filter: brightness(0.9);
   }
 
