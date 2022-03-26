@@ -12,7 +12,7 @@ export const Button = styled.button<ButtonStyleProps>`
   border-radius: 0.5rem;
 
   background: ${(props) => props.color[0]};
-  color: ${props => props.theme.colors.primary.white};
+  color: ${props => props.theme.colors.texts.white};
 
   transition: all 0.2s ease-in-out;
 

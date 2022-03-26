@@ -5,13 +5,18 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
 
-  background: ${props => props.theme.colors.primary.creamWhite};
+  background: ${props => props.theme.colors.primary.background};
+`
+export const ThemeToogle = styled.div`
+  position: absolute;
+  top: 20px;
+  right: 20px;
 `
 
 export const Aside = styled.aside`
   width: 50%;
   height: 100%;
-  background-color: ${props => props.theme.colors.primary.white};
+  background-color: ${props => props.theme.colors.primary.sidebar};
 
   display: flex;
   flex-direction: column;
@@ -28,13 +33,13 @@ export const Aside = styled.aside`
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
-      color: ${props => props.theme.colors.gray[900]};
+      color: ${props => props.theme.colors.texts.primary};
     }
     
     p {
       font-size: 1.1rem;
       line-height: 1.5rem;
-      color: ${props => props.theme.colors.gray[400]};
+      color: ${props => props.theme.colors.texts.secondary};
     }
   }
 
@@ -91,6 +96,7 @@ export const AnonymousInput = styled.input`
   border-radius: 0.5rem;
 
   color: ${props => props.theme.colors.gray[300]};
+  background: transparent;
 
   padding: 0rem 1rem;
 

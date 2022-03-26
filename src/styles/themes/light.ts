@@ -26,6 +26,7 @@ export default {
     texts: {
       primary: "#000000",
       secondary: "#4D4D4D",
+      white: "#FFFFFF",
     },
     gray: {
       900: "#343539",

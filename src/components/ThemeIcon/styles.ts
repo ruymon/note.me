@@ -6,10 +6,15 @@ export const ThemeIconWrapper = styled.a`
   justify-content: center;
 
   transition: all .2s ease-in-out;
+  transform: scale(1.1);
+
+  svg {
+    color: ${props => props.theme.colors.texts.primary};
+  }
 
   &:hover {
     cursor: pointer;
     filter: brightness(0.8);
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 `;
