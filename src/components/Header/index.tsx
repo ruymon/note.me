@@ -11,7 +11,7 @@ export function Header()  {
         <Input placeholder="Search Notes" />
       </Searchbar>
 
-      <ThemeIcon theme='light' />
+      <ThemeIcon />
 
     </Container>
   );

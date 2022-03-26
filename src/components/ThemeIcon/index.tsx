@@ -1,21 +1,23 @@
 import { ThemeIconWrapper } from './styles';
 
 import { FiMoon, FiSun } from 'react-icons/fi';
+import { useCustomTheme } from '../../hooks/useCustomTheme';
 
-interface ThemeIconProps {
-    theme: 'light' | 'dark';
+interface IconDictonaryTypes {
+  [key: string]: React.FC<React.SVGProps<SVGSVGElement>>;
 }
 
-const iconDictonary = {
+const iconDictonary: IconDictonaryTypes = {
     light: FiMoon,
     dark: FiSun,
 }
 
-export function ThemeIcon({ theme }: ThemeIconProps) {
-  const Icon = iconDictonary[theme];
+export function ThemeIcon() {
+  const { toggleTheme, theme } = useCustomTheme();
+  const Icon = iconDictonary[theme.title];
 
   return (
-    <ThemeIconWrapper>
+    <ThemeIconWrapper onClick={toggleTheme}>
       <Icon />
     </ThemeIconWrapper>
   )
