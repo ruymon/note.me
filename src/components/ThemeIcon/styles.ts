@@ -9,7 +9,7 @@ export const ThemeIconWrapper = styled.a`
   transform: scale(1.1);
 
   svg {
-    color: ${props => props.theme.colors.texts.primary};
+    color: ${props => props.theme.colors.texts.secondary};
   }
 
   &:hover {

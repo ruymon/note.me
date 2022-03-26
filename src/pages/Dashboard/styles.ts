@@ -19,13 +19,3 @@ export const Container = styled.main`
 
   padding: 0 4rem;
 `
-
-export const PostContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-
-  flex-wrap: wrap;
-`;

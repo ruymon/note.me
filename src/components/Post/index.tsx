@@ -1,5 +1,8 @@
 import { ReactNode } from "react";
 import { useTheme } from "styled-components";
+
+import { formatTimestamp } from "../../utils/formatTimestamp";
+
 import { Container, Content } from "./styles";
 
 interface PostProps {
@@ -19,11 +22,13 @@ export function Post(props: PostProps) {
     cyan: currentTheme.colors.post.opaqueLightCyan,
   };
 
+  const formatedTime = formatTimestamp(props.date);
+
   return (
     <Container color={postColorDictionary[props.color]}>
       <Content>
-        {props.children}
-        <span>{props.date}</span>
+        <p>{props.children}</p>
+        <span>{formatedTime}</span>
       </Content>
     </Container>
   );
