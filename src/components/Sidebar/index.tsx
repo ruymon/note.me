@@ -9,7 +9,7 @@ export function Sidebar() {
   return (
     <Wrapper>
       <Container>
-        <LogoIcon theme={'light'} />
+        <LogoIcon />
 
         <div>
           <SidebarItem active>

@@ -1,14 +1,13 @@
 import { ThemeIconWrapper } from './styles';
 
-import { FiMoon, FiSunset, FiSun } from 'react-icons/fi';
+import { FiMoon, FiSun } from 'react-icons/fi';
 
 interface ThemeIconProps {
-    theme: 'light' | 'hybrid' | 'dark';
+    theme: 'light' | 'dark';
 }
 
 const iconDictonary = {
     light: FiMoon,
-    hybrid: FiSunset,
     dark: FiSun,
 }
 

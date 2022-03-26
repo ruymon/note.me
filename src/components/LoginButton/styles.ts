@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "../../styles/colors";
 
 interface ButtonStyleProps {
   color: string[];
@@ -13,7 +12,7 @@ export const Button = styled.button<ButtonStyleProps>`
   border-radius: 0.5rem;
 
   background: ${(props) => props.color[0]};
-  color: ${colors.primary.white};
+  color: ${props => props.theme.colors.primary.white};
 
   transition: all 0.2s ease-in-out;
 

@@ -1,29 +1,30 @@
 import { ReactNode } from "react";
+import { useTheme } from "styled-components";
 import { Container, Content } from "./styles";
 
-import { colors } from '../../styles/colors';
-
 interface PostProps {
-    color: 'yellow' | 'orange' | 'lilac' | 'green' | 'cyan';
-    children: ReactNode;
-    date: string;
+  color: "yellow" | "orange" | "lilac" | "green" | "cyan";
+  children: ReactNode;
+  date: string;
 }
 
-const postColorDictionary = {
-    'yellow': colors.post.opaqueLightYellow,
-    'orange': colors.post.opaqueRedOrange,
-    'lilac': colors.post.opaqueLilac,
-    'green': colors.post.opaqueGreenCyan,
-    'cyan': colors.post.opaqueLightCyan,
-};
-
 export function Post(props: PostProps) {
-    return(
-        <Container color={postColorDictionary[props.color]}>
-            <Content>
-                {props.children}
-                <span>{props.date}</span>
-            </Content>
-        </Container>
-    )
+  const currentTheme = useTheme();
+
+  const postColorDictionary = {
+    yellow: currentTheme.colors.post.opaqueLightYellow,
+    orange: currentTheme.colors.post.opaqueRedOrange,
+    lilac: currentTheme.colors.post.opaqueLilac,
+    green: currentTheme.colors.post.opaqueGreenCyan,
+    cyan: currentTheme.colors.post.opaqueLightCyan,
+  };
+
+  return (
+    <Container color={postColorDictionary[props.color]}>
+      <Content>
+        {props.children}
+        <span>{props.date}</span>
+      </Content>
+    </Container>
+  );
 }

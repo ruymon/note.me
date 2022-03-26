@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import { colors } from '../../styles/colors';
 
 export const Wrapper = styled.aside`
   height: 100vh;
   width: 5rem;
 
-  background: ${colors.primary.white};
+  background: ${props => props.theme.colors.primary.sidebar};
 
   filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
 

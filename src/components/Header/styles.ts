@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-import { colors } from "../../styles/colors";
-
 export const Container = styled.div`
-  color: ${colors.gray[300]};
+  color: ${props => props.theme.colors.gray[300]};
 
   display: flex;
   align-items: center;
@@ -22,8 +20,9 @@ export const Input = styled.input`
   border: none;
   font-weight: 500;
   font-size: 0.9rem;
+  background: transparent;
 
-  color: ${colors.gray[300]};
+  color: ${props => props.theme.colors.gray[300]};
 
   &:focus {
     outline: none;

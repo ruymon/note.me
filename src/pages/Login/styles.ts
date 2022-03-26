@@ -1,18 +1,17 @@
 import styled from "styled-components";
-import { colors } from './../../styles/colors';
 
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
 
-  background: ${colors.primary.creamWhite};
+  background: ${props => props.theme.colors.primary.creamWhite};
 `
 
 export const Aside = styled.aside`
   width: 50%;
   height: 100%;
-  background-color: ${colors.primary.white};
+  background-color: ${props => props.theme.colors.primary.white};
 
   display: flex;
   flex-direction: column;
@@ -29,13 +28,13 @@ export const Aside = styled.aside`
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
-      color: ${colors.gray[900]};
+      color: ${props => props.theme.colors.gray[900]};
     }
     
     p {
       font-size: 1.1rem;
       line-height: 1.5rem;
-      color: ${colors.gray[400]};
+      color: ${props => props.theme.colors.gray[400]};
     }
   }
 
@@ -60,7 +59,7 @@ export const Main = styled.main`
 
   div {
     width: 20rem;
-    color: ${colors.gray[300]};
+    color: ${props => props.theme.colors.gray[300]};
     font-size: 0.8rem;
     font-weight: 400;
 
@@ -75,7 +74,7 @@ export const Main = styled.main`
       content: " ";
       flex: 1 1 0%;
       height: 1px;
-      background: ${colors.gray[300]} none repeat scroll 0% 0%;
+      background: ${props => props.theme.colors.gray[300]} none repeat scroll 0% 0%;
     }
   }
 
@@ -88,10 +87,10 @@ export const AnonymousInput = styled.input`
   width: 17.9rem;
   height: 3rem;
 
-  border: 1px solid ${colors.gray[300]};
+  border: 1px solid ${props => props.theme.colors.gray[300]};
   border-radius: 0.5rem;
 
-  color: ${colors.gray[300]};
+  color: ${props => props.theme.colors.gray[300]};
 
   padding: 0rem 1rem;
 
@@ -101,6 +100,6 @@ export const AnonymousInput = styled.input`
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px ${colors.gray[200]};	
+    box-shadow: 0 0 0 3px ${props => props.theme.colors.gray[200]};	
   }
 `

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "../../styles/colors";
 
 interface PostStyleProps {
     color: string;
@@ -33,13 +32,13 @@ export const Content = styled.div`
         font-size: 1rem;
         font-weight: 500;
         line-height: 25px;
-        color: ${colors.primary.midnight}
+        color: ${props => props.theme.colors.primary.main}
     }
 
     span {
         font-size: 0.8rem;
         font-weight: 500;
-        color: ${colors.primary.midnight};
+        color: ${props => props.theme.colors.primary.main};
         opacity: 0.8;
     }
 `;
