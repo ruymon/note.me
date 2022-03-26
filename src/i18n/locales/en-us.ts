@@ -11,6 +11,14 @@ const enUsTranslations: { translations: Translations } = {
       joinAnonymous: "or join anonymously",
       joinAnonymouslyButton: "Join anonymously",
     },
+    app: {
+      greeting: "Hello",
+      subtitle: "All your notes are here, in one place!",
+      search: "Search notes",
+      createNote: "Create a new note",
+      logout: "Logout",
+      themeToogle: "Switch theme"
+    }
   },
 };
 

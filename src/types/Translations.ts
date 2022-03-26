@@ -6,5 +6,13 @@ export interface Translations {
     typeCodename: string,
     joinAnonymous: string,
     joinAnonymouslyButton: string,
+  },
+  app: {
+    greeting: string,
+    subtitle: string,
+    search: string,
+    createNote: string,
+    logout: string,
+    themeToogle: string
   }
 }

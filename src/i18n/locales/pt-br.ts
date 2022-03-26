@@ -11,6 +11,14 @@ const ptBrTranslations: { translations: Translations } = {
       joinAnonymous: "ou entrar anônimamente",
       joinAnonymouslyButton: "Entrar anônimamente",
     },
+    app: {
+      greeting: "Olá",
+      subtitle: "Todas as suas anotações estão aqui, em um só lugar!",
+      search: "Buscar anotações",
+      createNote: "Criar uma nova anotação",
+      logout: "Sair",
+      themeToogle: "Mudar tema"
+    }
   },
 };
 
