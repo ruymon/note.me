@@ -1,3 +1,4 @@
+import { I18nextProvider } from "react-i18next";
 import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { useCustomTheme } from "./hooks/useCustomTheme";

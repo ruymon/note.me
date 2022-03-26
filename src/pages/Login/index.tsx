@@ -1,18 +1,21 @@
 import { useState } from "react";
-
-import { Container, Aside, Main, AnonymousInput, ThemeToogle } from "./styles";
+import { useTranslation } from "react-i18next";
+import { useTheme } from "styled-components";
 
 import { FaGoogle } from "react-icons/fa";
 import { FiLogIn } from "react-icons/fi";
 
-import { LoginButton } from "./../../components/LoginButton";
 import { ThemeIcon } from "../../components/ThemeIcon";
-import { useTheme } from "styled-components";
+import { LoginButton } from "./../../components/LoginButton";
+
+import { AnonymousInput, Aside, Container, Main, ThemeToogle } from "./styles";
+
 
 export function Login() {
   const [codename, setCodename] = useState("");
   const isDisabled = codename.trim() === "";
   const currentTheme = useTheme();
+  const { t } = useTranslation();
 
   return (
     <Container>
@@ -24,11 +27,8 @@ export function Login() {
       <Aside>
         <img src='dude.svg' alt='Man using computer and drinking coffee' />
         <div>
-          <h1>Keep life simple</h1>
-          <p>
-            Store all your notes in a simple and intuitive app that helps you
-            enjoy what is most important in life.
-          </p>
+          <h1>{ t('login.hero')}</h1>
+          <p>{ t('login.subtitle')}</p>
         </div>
       </Aside>
 
@@ -36,20 +36,20 @@ export function Login() {
         
         <img src={`logo_${currentTheme.title}.svg`} alt="Note.me Logo" />
 
-        <LoginButton text='Join with Google' color='red'>
+        <LoginButton text={ t('login.joinWithGoogle')} color='red'>
           <FaGoogle />
         </LoginButton>
 
-        <div>or join anonymously</div>
+        <div>{ t('login.joinAnonymous')}</div>
 
         <AnonymousInput
-          placeholder='Type your secret codename'
+          placeholder={ t('login.typeCodename')}
           onChange={(e) => setCodename(e.target.value)}
           value={codename}
         />
 
         <LoginButton
-          text='Join anonymously'
+          text={ t('login.joinAnonymouslyButton')}
           color='green'
           disabled={isDisabled}
         >
