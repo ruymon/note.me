@@ -25,7 +25,7 @@ export function Login() {
 
 
       <Aside>
-        <img src='dude.svg' alt='Man using computer and drinking coffee' />
+        <img src={`dude_${currentTheme.title}.svg`} alt='Man using computer and drinking coffee' />
         <div>
           <h1>{ t('login.hero')}</h1>
           <p>{ t('login.subtitle')}</p>
